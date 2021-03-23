@@ -29,17 +29,232 @@ footer, header, hgroup, menu, nav, section {
 #content{
     min-width: 100vw;
     min-height: 100vh;
+    background-color: #efefef;
 }
 
+
+.page {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  background: white;
+  
+  top: 20px;
+  padding-bottom: 50px;
+  
+  width: 92vw;
+  height: 75vh;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  min-width: 240px;
+ 
+}
+
+.page-content{
+  height: 100%;
+}
+
+.img{
+  width: 100%;
+}
+
+.content-img{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+
+/*for mobile 360pxish*/
 header{
-    background-color: wheat;
+    
     font-size: 38px;
-    padding: 10px 15px 10px;
+    padding-top: 10px;
+    text-align: center;
     
 }
 main{
     padding-top: 20px;
 }
 .img{
-    width: 100%;
+  width: 95%;
+  
+  padding-left: 2.5%;
+  padding-top: 1%;
+    
 }
+
+.content-img{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+
+ 
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+  font-size: 17px;
+  
+
+}
+
+p{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(156, 156, 156, 0.253);
+}
+/*Tab BAR End*/
+
+
+
+
+
+/*for ipad*/
+@media only screen and (min-width:768px){
+  header{
+    
+    font-size: 38px;
+    padding-top: 10px;
+  
+}
+  main{
+    padding-top: 20px;
+  }
+  .img{
+    width: 95%;
+    height: 350px;
+    padding-left: 2.5%;
+    padding-top: 1%;
+
+  }
+
+  .content-img{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+
+p{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+}
+/*for big screen*/
+@media only screen and (min-width:1000px){
+  header{
+    
+    font-size: 49px;
+    padding-top: 10px;
+    
+    
+}
+  main{
+    padding-top: 20px;
+}
+  .img{
+    padding-left: 12px;
+    width: 45vw;
+    height: 50vh;
+}
+p{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ 
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(241, 241, 241);
+}
+/*Tab BAR End*/
+
+
+}
+
+
+/*Tab BAR*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
