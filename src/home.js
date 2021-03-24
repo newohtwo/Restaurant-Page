@@ -1,4 +1,4 @@
-//TODO make this module return an already made div or array of divs that will create the welcome page,
+
 
 const home = (() =>{
     

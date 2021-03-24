@@ -1,6 +1,8 @@
 //TODO create here header , nav , footer , main content get from home,contact,menu
 //TODO first run of the website shows the home main
 import home from "./home";
+import menu from "./menu";
+import contact from "./contant";
 const website = (() =>{
 
     const contentDiv = document.querySelector("#content");
@@ -13,6 +15,7 @@ const website = (() =>{
         //append all the needed elements into content
         contentDiv.appendChild(_header());
         contentDiv.appendChild(_page());
+        tabClick("Home");
         
         //add here the nav
         //main
@@ -35,8 +38,6 @@ const website = (() =>{
         page.className ="page";
         page.appendChild(_nav());
         //add navbar
-        
-
         
         pageContent.className = "page-content";
 
@@ -83,26 +84,25 @@ const website = (() =>{
 
     function tabClick(elementId){
         
-        
-
         switch(elementId){
             case "Home":
                _deletePageContent(elementId) ? pageContent.appendChild(home.main()) :  false;
-               
-                 
-                
                 currentPage = "Home"; 
+                pageContent.style.overflow = "hidden";
                 break;
             case "Menu":
-                _deletePageContent(elementId);
+               
+                _deletePageContent(elementId) ? pageContent.appendChild(menu.main()) :  false;
+                pageContent.style.overflow = "scroll";
                 currentPage = "Menu"; 
-                
                 break;
             case "Contacts":
-                _deletePageContent(elementId);
+                _deletePageContent(elementId) ? pageContent.appendChild(contact.main()) : false;
                 currentPage = "Contacts"; 
+                pageContent.style.overflow = "hidden";
                 break;
         }
+
         
        
        
